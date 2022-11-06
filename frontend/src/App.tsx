@@ -1,21 +1,19 @@
-import logo from '../../assets/img/logo-dsmeta.svg';
-import './style.css';
+import Header from "./components/Header";
+import SalesCard from "./components/SalesCard";
 
-function Header() {
-    return (
-        <header>
-            <div className="dsmeta-logo-container">
-                <img src={logo} alt="DSMeta" />
-                <h1>DSMeta</h1>
-                <p>
-                    Desenvolvido por
-                    <a href="https://www.instagram.com/joiamarketing/" target="_blank">
-                        @joiamarketing
-                    </a>
-                </p>
-            </div>
-        </header>
-    )
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
+    </>
+  )
 }
 
-export default Header;
+export default App;
