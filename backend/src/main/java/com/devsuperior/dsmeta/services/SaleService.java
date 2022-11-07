@@ -21,7 +21,7 @@ public class SaleService {
 
 	public Page<Sale> findSales(String minDate, String maxDate, Pageable pageable) {
 		
-		//COLOCAR DATA DEFOULT 
+		//COLOCAR DATA DEFAULT 
 		LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
 		
 		//CONVERTER A data NA FORMA DE TEXTO PARA LocalDate
